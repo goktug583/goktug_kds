@@ -1,0 +1,45 @@
+<aside class="left-sidebar sidebar-dark" id="left-sidebar">
+    <div id="sidebar" class="sidebar sidebar-with-footer">
+        <div class="app-brand">
+            <a href="<%= baseURL %>/">
+                <img src="./logo.png" style="width: 50px" />
+                <span class="brand-name">Sağlık Rehberi</span>
+            </a>
+        </div>
+        <div class="sidebar-left" data-simplebar style="height: 100%">
+            <ul class="nav sidebar-inner" id="sidebar-menu">
+                <li class="<%= activePage === 'dashboard' ? 'active' : '' %>">
+                    <a class="sidenav-item-link" href="<%= baseURL %>/">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="<%= activePage === 'department' ? 'active' : '' %>">
+                    <a
+                        class="sidenav-item-link"
+                        href="<%= baseURL %>/department"
+                    >
+                        <i class="fa-solid fa-building"></i>
+                        <span class="nav-text">Departmanlar</span>
+                    </a>
+                </li>
+                <li class="<%= activePage === 'cost' ? 'active' : '' %>">
+                    <a class="sidenav-item-link" href="<%= baseURL %>/cost">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="nav-text">Kayıp Kazançlar</span>
+                    </a>
+                </li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/doctors">
+        <i class="fas fa-user-md"></i>
+        <span>Doktor Yönetimi</span>
+    </a>
+</li>
+            
+            </ul>
+        </div>
+    </div>
+</aside>
+
