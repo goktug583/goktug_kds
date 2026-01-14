@@ -31,24 +31,30 @@ Proje kapsamında gerçek hayat senaryolarına uygun **2 temel iş kuralı** kod
 ## ⚙️ Kurulum ve Çalıştırma
 
 Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+1. **NodeJS Kurulumu**
+Eğer bilgisayarınızda Node.js yüklü değilse (veya emin değilseniz):
+1.  [nodejs.org](https://nodejs.org/) adresine gidin.
+2.  Soldaki **LTS (Long Term Support)** sürümünü indirin ve kurun.
+3.  Kurulum bittikten sonra kullandığınız editörü (VS Code vb.) **kapatıp yeniden açın**.
 
-1.  **Gerekli paketleri yükleyin:**
+2.  **Gerekli paketleri yükleyin:**
+    Editörünüzden terminali açın ve aşağıdaki komutu girin.
     *(Not: Proje dosya boyutunu düşük tutmak için `node_modules` klasörü hariç yüklenmiştir. İlk çalıştırmada aşağıdaki komut zorunludur.)*
     ```bash
-    npm install
+    npm install 
     ```
 
-2.  **Veritabanını Oluşturun (ÖNEMLİ):**
+3.  **Veritabanını Oluşturun (ÖNEMLİ):**
     * Yerel MySQL sunucunuzda **`db_healthguide2`** adında boş bir veritabanı oluşturun.
     * Proje ana dizininde bulunan **`db_healthguide2.sql`** dosyasını bu veritabanına **içe aktarın (import)**.
 
-3.  **Çevresel değişkenleri ayarlayın:**
+4.  **Çevresel değişkenleri ayarlayın:**
     * `.env.example` dosyasının adını `.env` olarak değiştirin.
     * İçerisindeki veritabanı bilgilerini (kullanıcı adı, şifre vb.) kendi yerel ayarlarınıza göre doldurun.
 
-4.  **Projeyi başlatın:**
+5.  **Projeyi başlatın:**
     ```bash
-    npm start
+    npm start  
     ```
     Tarayıcıda `http://localhost:3000` adresine gidin.
 
