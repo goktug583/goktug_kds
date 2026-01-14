@@ -41,10 +41,14 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
     ```bash
     npm install 
     ```
-3.  **Veritabanını Oluşturun:**
+3. **Çevresel Değişkenleri Ayarlayın (.env):**
+   * Proje kök dizininde `.env.example` dosyasının ismini `.env` olarak değiştirin.
+   * Ardından kendi veritabanı bilgilerinizle güncelleyin.
+
+4.  **Veritabanını Oluşturun:**
     * MySQL sunucunuzda **`db_healthguide2`** adında bir veritabanı oluşturun.
     * Ana dizindeki **`db_healthguide2.sql`** dosyasını bu veritabanına aktarın.
-4.  **Projeyi Başlatın:**
+5.  **Projeyi Başlatın:**
     ```bash
     npm start  
     ```
